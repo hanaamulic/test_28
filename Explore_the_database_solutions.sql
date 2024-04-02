@@ -1,5 +1,5 @@
 -- 1. How many orders are there in the dataset? The orders table contains a row for each order, so this should be easy to find out!-- 
-select count(*) from ord;
+select count(*) from orders;
 
 SELECT count(order_id), count(distinct order_id) from order_items;
 
@@ -28,7 +28,7 @@ FROM orders
 GROUP BY HOUR(order_purchase_timestamp)
 ORDER BY HOUR(order_purchase_timestamp);
 
--- 4. How many products are there on the products table? (Make sure that there are no duplicate products.)
+-- 4. HM products are there on the products table? (Make sure that there are no duplicate products.)
 SELECT COUNT(DISTINCT product_id) AS num_products
 FROM products;
 
