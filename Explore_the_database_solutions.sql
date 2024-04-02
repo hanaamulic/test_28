@@ -1,5 +1,5 @@
 -- 1. How many orders are there in the dataset? The orders table contains a row for each order, so this should be easy to find out!-- 
-select count(*) from orders;
+select count(*) from ord;
 
 SELECT count(order_id), count(distinct order_id) from order_items;
 
